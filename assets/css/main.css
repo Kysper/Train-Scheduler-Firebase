@@ -1,0 +1,76 @@
+body
+{
+    margin:0 auto;
+    width:70%;
+    background-image: linear-gradient(lightblue,white, lightblue);
+}
+html
+{
+    position:relative;
+    left:10%;
+}
+td
+{
+    background:white;
+    color:gray;
+    font-size:20px;
+    font-weight:bold;
+}
+.table
+{
+    width: 70%;
+    padding:10%;
+}
+
+.jumbotron
+{
+    color:gray;
+    font-size:30px;
+    text-align:center;
+    background-image: linear-gradient(lightblue, white);
+    border: 4px solid gray;
+}
+
+.input-container
+{
+    border: 4px solid gray;
+    border-radius:5%; 
+    background:lightblue;
+
+}
+label
+{
+    margin:2%;
+    font-size:20px;
+    color:gray;
+    font-weight:bold;
+    
+}
+
+th
+{
+    background-image: linear-gradient( lightblue,white, lightblue);
+    color:gray;
+    font-size:20px;
+}
+
+
+form
+{
+    border: 4px solid lightgray;
+    background-image: linear-gradient(white, lightblue);
+}
+input
+{   max-width:95%;
+    left:2%;
+    position:relative;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+#add-train
+{
+    background-image:(white,lightblue );
+   color:gray;
+   font-size:20px;
+}

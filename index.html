@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Train Scheduler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="assets/javascript/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+
+<body>
+
+  <div class="align-self-center bordered">
+    <div class="jumbotron">
+      <h1 class="display-4">Train Scheduler</h1>
+      <p class="lead">Welcome to Trans-Dimentional Portal Station</p>
+      <hr class="my-4">
+      <p>Welcome to the future at TDPS</p>
+      <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+    </div>
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">Train Name</th>
+          <th scope="col">Destintation</th>
+          <th scope="col">Frequency</th>
+          <th scope="col">Next Arrival</th>
+          <th scope="col">Minutes Away</th>
+        </tr>
+      </thead>
+      <tbody id="add-train">
+      </tbody>
+    </table>
+    <form>
+      <div class="form-group">
+        <label id="name">Train Name</label>
+        <input type="text" class="form-control" id="name-input" placeholder="Hyper Max">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Destination</label>
+        <input type="text" class="form-control" id="destination" placeholder="Omicron Persei 8">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Train Starting Time (HH:mm)</label>
+        <input type="text" class="form-control" id="start-time" placeholder="12:00">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Frequency (mins)</label>
+        <input type="text" class="form-control" id="frequency" placeholder="15 Minutes">
+      </div>
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
